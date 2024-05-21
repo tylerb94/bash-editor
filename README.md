@@ -25,7 +25,7 @@ Bash Editor is a simple graphical user interface application written in Python u
     ```
 2. Run the application:
     ```bash
-    python bash_editor.py
+    python main.py
     ```
 
 ## Usage
