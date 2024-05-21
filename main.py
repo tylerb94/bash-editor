@@ -24,7 +24,7 @@ class TextEditorApp:
         save_button.pack(side=tk.LEFT, padx=5, pady=5)
 
         # Create "Clear" button
-        clear_button = tk.Button(button_frame, text="Clear", command=self.clear_editor)
+        clear_button = tk.Button(button_frame, text="Clear", command=self.clear_output)
         clear_button.pack(side=tk.LEFT, padx=5, pady=5)
 
         # Create "Run" button
@@ -96,9 +96,6 @@ class TextEditorApp:
             output = e.output
 
         self.display_output(output)
-
-    def clear_editor(self):
-        self.editable_textbox.delete("1.0", tk.END)
 
     def clear_output(self):
         self.readonly_textbox.config(state=tk.NORMAL)
